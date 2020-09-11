@@ -1,71 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boolzap</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8" />
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Boolzap</title>
+      </head>
+<body>
 
     <div class="container-fluid bg d-flex justify-content-center align-items-center">
-
-            <div class="row wrapper">
-                <div class="col-6 d-flex flex-column left-column">
-                    <div class="col-12 left-header">
+        <div class="row wrapper">
+            <div class="col-6 d-flex flex-column left-column">
+                <div class="row">
+                    <div class="col-12">
                         <div class="row">
-                            <div class="col-6 left-icon">
-                                <img src="img/girl.svg" class="img-responsive" alt="">
+                            <div class="col-12 left-header">
+                              <div class="row">
+                                <div class="col-6 left-icon">
+                                  <img src="img/girl.svg" class="img-responsive" alt="" />
+                                </div>
+                                <div class="col-2 left-button-download">
+                                  <img src="img/download.svg" alt="Girl Icon" />
+                                </div>
+                                <div class="col-2 left-button-chat">
+                                  <img src="img/chat.svg" alt="Girl Icon" />
+                                </div>
+                                <div class="col-2 left-button-dots">
+                                  <img src="img/dots.svg" alt="Girl Icon" />
+                                </div>
+                              </div>
                             </div>
-                            <div class="col-2 left-button-download">
-                                <img src="img/download.svg" alt="Girl Icon">
-                            </div>
-                            <div class="col-2 left-button-chat">
-                                <img src="img/chat.svg" alt="Girl Icon">
-                            </div>
-                            <div class="col-2 left-button-dots">
-                                <img src="img/dots.svg" alt="Girl Icon">
-                            </div>
-                        </div>
+                          </div>
                     </div>
-                    <div class="col-12"></div>
-                    <div class="col-12"></div>
-                </div>
-                <div class="col-6 d-flex flex-column right-column">
-                    <div class="col-12 right-header">
+                    <div class="col-12">
                         <div class="row">
-                            <div class="col-2">
-                                <img src="img/boy.svg" alt="" class="img-responsive">
-                            </div>
-                            <div class="col-6">
-
-                            </div>
-                            <div class="col-4 right-header-icons d-flex justify-content-end">
+                            <div class="col-12 left-searchbar">
+                              <label class="search-label" for="search">
                                 <i class="fa fa-search" aria-hidden="true"></i>
-                                <i class="fa fa-paperclip" aria-hidden="true"></i>
-                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                              </label>
+                              <input
+                                id="contacts-filter"
+                                class="left-searchbar-input"
+                                placeholder="Cerca o inizia una nuova chat"
+                                name="search"
+                              />
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 contact-list">
+                        <div class="row contact">
+                            <div class="col-2 contact-info">
+                              <img src="img/man-3.svg" alt="" />
+                            </div>
+                            <div class="col-8 contact-name">
+                              <span class="name">
+                                <p>Friar Tuck</p>
+                              </span>
+                              <span>
+                                <p class="message-font">This will be the last comment</p>
+                              </span>
+                            </div>
+                            <div class="col-2">
+                              <span>
+                                <p>13:12</p>
+                              </span>
                             </div>
                         </div>
+                        <div class="row contact">
+                            <div class="col-2 contact-info">
+                              <img src="img/man-1.svg" alt="" />
+                            </div>
+                            <div class="col-8 contact-name">
+                              <span class="name">
+                                <p>Little John</p>
+                              </span>
+                              <span>
+                                <p class="message-font">This will be the last comment</p>
+                              </span>
+                            </div>
+                            <div class="col-2">
+                              <span>
+                                <p>13:12</p>
+                              </span>
+                            </div>
+                        </div>
+                        <div class="row contact-list">  
+                            <div class="col-2 contact-info">
+                              <img src="img/man-4.svg" alt="" />
+                            </div>
+                            <div class="col-8 contact-name">
+                              <span class="name">
+                                <p>Robin Hood</p>
+                              </span>
+                              <span>
+                                <p class="message-font">This will be the last comment</p>
+                              </span>
+                            </div>
+                            <div class="col-2">
+                              <span>
+                                <p>18:22</p>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="row contact">  
+                            <div class="col-2 contact-info">
+                              <img src="img/man.svg" alt="" />
+                            </div>
+                            <div class="col-8 contact-name">
+                              <span class="name">
+                                <p>Robin Hood</p>
+                              </span>
+                              <span>
+                                <p class="message-font">This will be the last comment</p>
+                              </span>
+                            </div>
+                            <div class="col-2">
+                              <span>
+                                <p>18:22</p>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="row contact">  
+                            <div class="col-2 contact-info">
+                            
+                              <img src="img/man-1.svg" alt="" />
+                            </div>
+                            <div class="col-8 contact-name">
+                              <span class="name">
+                                <p>Prince John</p>
+                              </span>
+                              <span>
+                                <p class="message-font">This will be the last comment</p>
+                              </span>
+                            </div>
+                            <div class="col-2">
+                              <span>
+                                <p>9:34</p>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="row contact">  
+                            <div class="col-2 contact-info">
+                            
+                              <img src="img/girl-1.svg" alt="" />
+                            </div>
+                            <div class="col-8 contact-name">
+                              <span class="name">
+                                <p>Maid Marian</p>
+                              </span>
+                              <span>
+                                <p class="message-font">This will be the last comment</p>
+                              </span>
+                            </div>
+                            <div class="col-2">
+                              <span>
+                                <p>14:12</p>
+                              </span>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-12"></div>
-                    <div class="col-12"></div>
                 </div>
             </div>
+
+            <div class="col-6 right-column">
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
     </div>
-    <script src="master.js" charset="utf-8"></script>
-  </body>
+    
+</body>
 </html>
