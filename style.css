@@ -1,129 +1,157 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
-  background-color:  #009688;
+  background-color: #009688;
+}
+
+.body-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.container-wrapper {
+  height: 100%;
+  background-color: pink;
+  width: 50%;
+  padding: 0;
+  display: inline-block;
 }
 
 .container {
-    width: 80%;
-    height: 600px;
-  }
-
-  .wrapper {
-    border-style: solid;
-    border-color: black;
-    border-radius: 1px;
-    overflow: hidden;
-  }
-
-  .wrapper, .left-column, .right-column {
-    background: #EAEAEA;
-  }
-
-  .left-icon img {
-      width: 50px;
-      height: 50px; 
-  }
-
-  textarea:focus, input:focus {
-    outline: none;
-  }
-
-  .search-div {
-      height: 50px;
-  }
-
-  .left-header, .right-header {
-      height: 76px;
-      padding: 15px;
-  }
-
-  .left-searchbar {
-    width: 100%;
-    height: 45px;
-    background: #FAFAFA;
-  }
-
-  .left-searchbar .left-searchbar-input {
-    float: right;
-    width: calc(85% - 7px);
-    height: 36px;
-    margin: 7px 7px 7px 7px;
-    padding: 0 10px;
-    border-left: 0;
-    border-top: 1px solid #F5F5F5;
-    border-right: 1px solid #F5F5F5;
-    border-bottom: 1px solid #F5F5F5;
-    border-radius: 0px 3px 3px 0;
-    color: #B6B9BB;
-  }
-
-  .search-label i {
-      width: 50px;
-  }
-  
-.contact-list {
-    overflow-y: scroll;
-    height: 100%;
+  padding: 0;
+  position: relative;
 }
-  
-  .contact-color {
-    background-color: #fff;
-  }
-  
-  .contact:hover {
-    background-color: #f4f5f5;
-  }
 
-  .contact-list img {
-      width: 50px;
-      height: 50px;
-  }
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  border-radius: 1px;
+  overflow: hidden;
+  height: 600px;
+  width: 800px;
+}
 
-  .search-label {
-      text-align: center;
-  }
+.wrapper,
+.left-column,
+.right-column {
+  background: #eaeaea;
+}
 
-  .message-screen {
-    padding: 10px;
-    background-image: url(img/whatsapp.jpg);
-    background-size: cover;
-    border-left: 1px solid rgba(0, 0, 0, .08);
-    overflow: scroll;
-  }
-  
-  .message-field {
-    max-height: 6px;
-    width: 100%;
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 21px;
-    padding: 20px;
-    margin: 5px 10px;
-  }
+.left-icon img {
+  width: 50px;
+  height: 50px;
+}
 
-  .user-input {
-    height: 76px;
-    border-left: 1px solid rgba(0, 0, 0, .08);
-  }
-  
-  .user-submit i {
-    font-size: 26px;
-  }
-  
-  .user-submit {
-    padding: 15px;
-  }
+textarea:focus,
+input:focus {
+  outline: none;
+}
 
-  .height100 {
-      height: 100%;
-  }
+.search-div {
+  height: 50px;
+}
 
-  .width50 {
-    width: 50%;
-  }
+.left-header,
+.right-header {
+  height: 76px;
+  padding: 15px;
+}
+
+.left-searchbar {
+  margin: 10px 0 15px 0;
+  height: 45px;
+  background: #fafafa;
+}
+
+.left-searchbar .left-searchbar-input {
+  float: right;
+  width: calc(85% - 7px);
+  height: 36px;
+  margin: 7px 7px 7px 7px;
+  padding: 0 10px;
+  border-left: 0;
+  border-top: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  border-radius: 0px 3px 3px 0;
+  color: #b6b9bb;
+}
+
+.search-label i {
+  width: 50px;
+}
+
+.contact-list {
+  overflow-y: scroll;
+  max-height: 440px;
+
+}
+
+.contact-color {
+  background-color: #fff;
+}
+
+.contact:hover {
+  background-color: #f4f5f5;
+}
+
+.contact-list img {
+  width: 50px;
+  height: 50px;
+}
+
+.search-label {
+  text-align: center;
+}
+
+.message-screen {
+  min-height: 460px;
+  padding: 10px;
+  background-image: url(img/whatsapp.jpg);
+  background-size: cover;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: scroll;
+}
+
+.message-field {
+  max-height: 6px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 21px;
+  padding: 20px;
+  margin: 5px 10px;
+}
+
+.user-input {
+  height: 76px;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.user-submit i {
+  font-size: 26px;
+}
+
+.user-submit {
+  padding: 15px;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+#heightmine {
+  max-height: 50px;
+}

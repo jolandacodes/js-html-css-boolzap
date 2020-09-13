@@ -1,300 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolzap</title>
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boolzap</title>
-</head>
+  <body>
 
-<body>
+  <div class="body-wrapper">
+    <div class="container">
+      <div class="row wrapper">
 
-  <div class="container wrapper">
-    <div class="row row-cols-2">
-      <div class="col-6 left-header">
-        <div class="row">
-          <div class="col-6 left-icon">
-            <img src="img/girl.svg" class="img-responsive" alt="" />
-          </div>
-          <div class="col-2 left-button-download">
-            <img src="img/download.svg" alt="Girl Icon" />
-          </div>
-          <div class="col-2 left-button-chat">
-            <img src="img/chat.svg" alt="Girl Icon" />
-          </div>
-          <div class="col-2 left-button-dots">
-            <img src="img/dots.svg" alt="Girl Icon" />
+        <div class="col-12">
+          <div class="row">
+            <div class="col-6 left-header">
+              <div class="row">
+                <div class="col-6 left-icon">
+                  <img src="img/girl.svg" class="img-responsive" alt="" />
+                </div>
+                <div class="col-2 left-button-download">
+                  <img src="img/download.svg" alt="Girl Icon" />
+                </div>
+                <div class="col-2 left-button-chat">
+                  <img src="img/chat.svg" alt="Girl Icon" />
+                </div>
+                <div class="col-2 left-button-dots">
+                  <img src="img/dots.svg" alt="Girl Icon" />
+                </div>
+              </div>
+            </div>
+            <div class="col-6 right-header">
+              <div class="row">
+                <div class="col-2 contact-info">
+                  <img src="img/boy.svg" alt="" class="img-responsive" />
+                </div>
+                <div class="col-7 contact-name padding-box">
+                  <span>
+                    <p>Marco</p>
+                  </span>
+                </div>
+                <div class="col-1 header-icons">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="col-1 header-icons">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </div>
+                <div class="col-1 header-icons">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-6 right-header">
-        <div class="row">
-          <div class="col-2 contact-info">
-            <img src="img/boy.svg" alt="" class="img-responsive">
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-6">
+              <div
+              class="col-12 left-searchbar d-flex justify-content-center align-items-center"
+            >
+              <label class="search-label" for="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </label>
+              <input
+                id="contacts-filter"
+                class="left-searchbar-input"
+                placeholder="Cerca o inizia una nuova chat"
+                name="search"
+              />
+              </div>
+            <div class="contact-wrapper contact-list">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 contact-info">
+                      <img src="img/man-3.svg" alt="" />
+                    </div>
+                    <div class="col-8 contact-name">
+                      <span class="name">
+                        <p>Friar Tuck</p>
+                      </span>
+                      <span>
+                        <p class="message-font">This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                      <span>
+                        <p>13:12</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 contact-info">
+                      <img src="img/girl-1.svg" alt="" />
+                    </div>
+                    <div class="col-8 contact-name">
+                      <span class="name">
+                        <p>Maid Marian</p>
+                      </span>
+                      <span>
+                        <p class="message-font">This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                      <span>
+                        <p>14:12</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 contact-info">
+                      <img src="img/man-1.svg" alt="" />
+                    </div>
+                    <div class="col-8 contact-name">
+                      <span class="name">
+                        <p>Prince John</p>
+                      </span>
+                      <span>
+                        <p class="message-font">This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                      <span>
+                        <p>9:34</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 contact-info">
+                      <img src="img/man.svg" alt="" />
+                    </div>
+                    <div class="col-8 contact-name">
+                      <span class="name">
+                        <p>Little Hood</p>
+                      </span>
+                      <span>
+                        <p class="message-font">This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                      <span>
+                        <p>18:22</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 contact-info">
+                      <img src="img/man-4.svg" alt="" />
+                    </div>
+                    <div class="col-8 contact-name">
+                      <span class="name">
+                        <p>Robin Hood</p>
+                      </span>
+                      <span>
+                        <p class="message-font">This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                      <span>
+                        <p>3:12</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 contact-info">
+                      <img src="img/man.svg" alt="" />
+                    </div>
+                    <div class="col-8 contact-name">
+                      <span class="name">
+                        <p>Sheriff of Nottingham</p>
+                      </span>
+                      <span>
+                        <p class="message-font">This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                      <span>
+                        <p>6:22</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-12 message-screen msgsent-font">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
+                  et mollitia placeat quis saepe fugit atque sed quam nostrum, quasi
+                  officia doloribus laboriosam? Et labore alias unde quaerat eos
+                  amet.
+                </div>
+              </div>
+               <div class="row user-input">
+                  <div class="col-2 user-submit">
+                    <i class="fa fa-smile-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-8 contact-name">
+                    <input type="text" class="message message-field" />
+                  </div>
+                  <div class="col-2 user-submit">
+                    <button class="submit-button">
+                      <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+            </div>
+            </div>
+           
           </div>
-          <div class="col-7 contact-name padding-box">
-            <span>
-              <p>Marco</p>
-            </span>
-          </div>
-          <div class="col-1 header-icons">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </div>
-          <div class="col-1 header-icons">
-            <i class="fa fa-paperclip" aria-hidden="true"></i>
-          </div>
-          <div class="col-1 header-icons">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-          </div>
+
+       
         </div>
-      </div>
 
 
-      <div class="col-6">
-        <div class="row">
-          <div class="col-12 left-searchbar d-flex justify-content-center align-items-center">
-            <label class="search-label" for="search">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </label>
-            <input id="contacts-filter" class="left-searchbar-input" placeholder="Cerca o inizia una nuova chat"
-              name="search" />
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="row">
-          <div class="col-12 message-screen msgsent-font">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, et mollitia placeat quis saepe fugit
-            atque sed quam nostrum, quasi officia doloribus laboriosam? Et labore alias unde quaerat eos amet.
-
-          </div>
-        </div>
       </div>
     </div>
 
-    <div class="row contact-list">
-      <div class="col-6 contact-list">
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-2 contact-info">
-                <img src="img/man-3.svg" alt="" />
-              </div>
-              <div class="col-8 contact-name">
-                <span class="name">
-                  <p>Friar Tuck</p>
-                </span>
-                <span>
-                  <p class="message-font">This will be the last comment</p>
-                </span>
-              </div>
-              <div class="col-2 d-flex justify-content-center">
-                <span>
-                  <p>13:12</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-2 contact-info">
-                <img src="img/girl-1.svg" alt="" />
-              </div>
-              <div class="col-8 contact-name">
-                <span class="name">
-                  <p>Maid Marian</p>
-                </span>
-                <span>
-                  <p class="message-font">This will be the last comment</p>
-                </span>
-              </div>
-              <div class="col-2 d-flex justify-content-center">
-                <span>
-                  <p>14:12</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-2 contact-info">
 
-                <img src="img/man-1.svg" alt="" />
-              </div>
-              <div class="col-8 contact-name">
-                <span class="name">
-                  <p>Prince John</p>
-                </span>
-                <span>
-                  <p class="message-font">This will be the last comment</p>
-                </span>
-              </div>
-              <div class="col-2 d-flex justify-content-center">
-                <span>
-                  <p>9:34</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-2 contact-info">
-                <img src="img/man.svg" alt="" />
-              </div>
-              <div class="col-8 contact-name">
-                <span class="name">
-                  <p>Robin Hood</p>
-                </span>
-                <span>
-                  <p class="message-font">This will be the last comment</p>
-                </span>
-              </div>
-              <div class="col-2 d-flex justify-content-center">
-                <span>
-                  <p>18:22</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-2 contact-info">
-                <img src="img/man-4.svg" alt="" />
-              </div>
-              <div class="col-8 contact-name">
-                <span class="name">
-                  <p>Robin Hood</p>
-                </span>
-                <span>
-                  <p class="message-font">This will be the last comment</p>
-                </span>
-              </div>
-              <div class="col-2 d-flex justify-content-center">
-                <span>
-                  <p>18:22</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-2 contact-info">
-                <img src="img/man-4.svg" alt="" />
-              </div>
-              <div class="col-8 contact-name">
-                <span class="name">
-                  <p>Robin Hood</p>
-                </span>
-                <span>
-                  <p class="message-font">This will be the last comment</p>
-                </span>
-              </div>
-              <div class="col-2 d-flex justify-content-center">
-                <span>
-                  <p>18:22</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-2 contact-info">
-                <img src="img/man.svg" alt="" />
-              </div>
-              <div class="col-8 contact-name">
-                <span class="name">
-                  <p>Sheriff of Nottingham</p>
-                </span>
-                <span>
-                  <p class="message-font">This will be the last comment</p>
-                </span>
-              </div>
-              <div class="col-2 d-flex justify-content-center">
-                <span>
-                  <p>4:23</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-2 contact-info">
-                <img src="img/girl-4.svg" alt="" />
-              </div>
-              <div class="col-8 contact-name">
-                <span class="name">
-                  <p>Eleanor of Aquitaine</p>
-                </span>
-                <span>
-                  <p class="message-font">This will be the last comment</p>
-                </span>
-              </div>
-              <div class="col-2 d-flex justify-content-center">
-                <span>
-                  <p>23:00</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-  </div> <!-- end of middle row -->
 
-  <div class="col-6">
-    <div class="row user-input">
 
-      <div class="col-1 user-submit">
-        <i class="fa fa-smile-o" aria-hidden="true"></i>
-      </div>
-      <div class="col-9 contact-name">
-        <input type="text" class="message message-field">
+
 
       </div>
-      <div class="col-1 user-submit">
-        <button class="submit-button">
-          <i class="fa fa-paper-plane" aria-hidden="true"></i>
-        </button>
-      </div>
-
     </div>
-  </div>
-  </div>
+
+      
+
+  </div>  
+       
 
 
+   
+       
 
-
-
-  </div>
-
-</body>
-
+       
+    
+  </body>
 </html>
