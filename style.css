@@ -24,7 +24,10 @@ body {
 
 .container {
   padding: 0;
+  margin: 20px 0px 0px 0px;
   position: relative;
+  left: 60%;
+  transform: translateX(-50%);
 }
 
 .wrapper {
@@ -36,7 +39,7 @@ body {
   border-radius: 1px;
   overflow: hidden;
   height: 600px;
-  width: 800px;
+  width: 900px;
 }
 
 .wrapper,
@@ -154,4 +157,36 @@ input:focus {
 
 #heightmine {
   max-height: 50px;
+}
+
+/* Text Messages  */
+.msgsent-style {
+  max-width: 60px;
+  float: right;
+  clear: both;
+  padding: 6px 7px 8px 9px;
+  border-top-right-radius: 0;
+  background-color: #dcf8c6;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+  border-radius: 7.5px;
+  margin-top: 10px;
+}
+
+.msgrecieved-style {
+  max-width: 60px;
+  float: left;
+  clear: both;
+  padding: 6px 7px 8px 9px;
+  border-top-right-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+  border-radius: 7.5px;
+  margin-top: 10px;
+}
+
+.msgsent-font {
+  color: #262626;
+  flex: none;
+  font-size: 14.2px;
+  line-height: 19px;
 }
