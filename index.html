@@ -1,83 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolzap</title>
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boolzap</title>
-</head>
-
-<body>
-
-  <div class="body-wrapper">
-    <div class="container">
-      <div class="row wrapper">
-
-        <div class="col-12">
-          <div class="row">
-            <div class="col-6 left-header">
-              <div class="row">
-                <div class="col-6 left-icon">
-                  <img src="img/girl.svg" class="img-responsive" alt="" />
-                </div>
-                <div class="col-2 left-button-download">
-                  <img src="img/download.svg" alt="Girl Icon" />
-                </div>
-                <div class="col-2 left-button-chat">
-                  <img src="img/chat.svg" alt="Girl Icon" />
-                </div>
-                <div class="col-2 left-button-dots">
-                  <img src="img/dots.svg" alt="Girl Icon" />
+  <body>
+    <div class="div-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="row d-flex flex-column">
+              <div class="col-4 left-header" id="width100">
+                <div class="row">
+                  <div class="col-6 left-icon">
+                    <img src="img/girl.svg" class="img-responsive" alt="" />
+                  </div>
+                  <div class="col-2 left-button-download">
+                    <img src="img/download.svg" alt="Girl Icon" />
+                  </div>
+                  <div class="col-2 left-button-chat">
+                    <img src="img/chat.svg" alt="Girl Icon" />
+                  </div>
+                  <div class="col-2 left-button-dots">
+                    <img src="img/dots.svg" alt="Girl Icon" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 right-header">
-              <div class="row">
-                <div class="col-2 contact-info">
-                  <img src="img/boy.svg" alt="" class="img-responsive" />
-                </div>
-                <div class="col-7 contact-name padding-box">
-                  <span>
-                    <p>Marco</p>
-                  </span>
-                </div>
-                <div class="col-1 header-icons">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-                <div class="col-1 header-icons">
-                  <i class="fa fa-paperclip" aria-hidden="true"></i>
-                </div>
-                <div class="col-1 header-icons">
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              <div class="col-4" id="width100">
+                <div class="row">
+                  <div
+                    class="col-12 left-searchbar d-flex justify-content-center align-items-center"
+                  >
+                    <label class="search-label" for="search">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                    <input
+                      id="contacts-filter"
+                      class="left-searchbar-input"
+                      placeholder="Cerca o inizia una nuova chat"
+                      name="search"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <div class="row">
-            <div class="col-6">
-              <div class="col-12 left-searchbar d-flex justify-content-center align-items-center">
-                <label class="search-label" for="search">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </label>
-                <input id="contacts-filter" class="left-searchbar-input" placeholder="Cerca o inizia una nuova chat"
-                  name="search" />
-              </div>
-              <div class="contact-wrapper contact-list">
+              <div class="col-4" id="width100">
                 <div class="row">
                   <div class="col-12 contact" data-ref="chat1">
                     <div class="row">
-                      <div class="col-2 contact-info">
+                      <div class="col-2 contact-info d-flex justfy-content center align-items-center">
                         <img src="img/man-3.svg" alt="" />
                       </div>
                       <div class="col-8 contact-name">
@@ -85,7 +72,9 @@
                           <p>Friar Tuck</p>
                         </span>
                         <span>
-                          <p class="message-font">This will be the last comment</p>
+                          <p class="message-font">
+                            This will be the last comment
+                          </p>
                         </span>
                       </div>
                       <div class="col-2 d-flex justify-content-center">
@@ -99,7 +88,7 @@
                 <div class="row">
                   <div class="col-12 contact" data-ref="chat2">
                     <div class="row">
-                      <div class="col-2 contact-info">
+                      <div class="col-2 contact-info d-flex justfy-content center align-items-center">
                         <img src="img/girl-1.svg" alt="" />
                       </div>
                       <div class="col-8 contact-name">
@@ -107,7 +96,9 @@
                           <p>Maid Marian</p>
                         </span>
                         <span>
-                          <p class="message-font">This will be the last comment</p>
+                          <p class="message-font">
+                            This will be the last comment
+                          </p>
                         </span>
                       </div>
                       <div class="col-2 d-flex justify-content-center">
@@ -122,7 +113,7 @@
                 <div class="row">
                   <div class="col-12 contact" data-ref="chat3">
                     <div class="row">
-                      <div class="col-2 contact-info">
+                      <div class="col-2 contact-info d-flex justfy-content center align-items-center">
                         <img src="img/man-1.svg" alt="" />
                       </div>
                       <div class="col-8 contact-name">
@@ -130,7 +121,9 @@
                           <p>Prince John</p>
                         </span>
                         <span>
-                          <p class="message-font">This will be the last comment</p>
+                          <p class="message-font">
+                            This will be the last comment
+                          </p>
                         </span>
                       </div>
                       <div class="col-2 d-flex justify-content-center">
@@ -145,7 +138,7 @@
                 <div class="row">
                   <div class="col-12 contact" data-ref="chat4">
                     <div class="row">
-                      <div class="col-2 contact-info">
+                      <div class="col-2 contact-info d-flex justfy-content center align-items-center">
                         <img src="img/man.svg" alt="" />
                       </div>
                       <div class="col-8 contact-name">
@@ -153,7 +146,9 @@
                           <p>Little John</p>
                         </span>
                         <span>
-                          <p class="message-font">This will be the last comment</p>
+                          <p class="message-font">
+                            This will be the last comment
+                          </p>
                         </span>
                       </div>
                       <div class="col-2 d-flex justify-content-center">
@@ -168,7 +163,7 @@
                 <div class="row">
                   <div class="col-12 contact" data-ref="chat5">
                     <div class="row">
-                      <div class="col-2 contact-info">
+                      <div class="col-2 contact-info d-flex justfy-content center align-items-center">
                         <img src="img/man-4.svg" alt="" />
                       </div>
                       <div class="col-8 contact-name">
@@ -176,7 +171,9 @@
                           <p>Robin Hood</p>
                         </span>
                         <span>
-                          <p class="message-font">This will be the last comment</p>
+                          <p class="message-font">
+                            This will be the last comment
+                          </p>
                         </span>
                       </div>
                       <div class="col-2 d-flex justify-content-center">
@@ -191,7 +188,7 @@
                 <div class="row">
                   <div class="col-12 contact" data-ref="chat6">
                     <div class="row">
-                      <div class="col-2 contact-info">
+                      <div class="col-2 contact-info d-flex justfy-content center align-items-center">
                         <img src="img/man.svg" alt="" />
                       </div>
                       <div class="col-8 contact-name">
@@ -199,7 +196,9 @@
                           <p>Sheriff of Nottingham</p>
                         </span>
                         <span>
-                          <p class="message-font">This will be the last comment</p>
+                          <p class="message-font">
+                            This will be the last comment
+                          </p>
                         </span>
                       </div>
                       <div class="col-2 d-flex justify-content-center">
@@ -212,44 +211,75 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="row">
-                <div class="col-12 message-screen msgsent-font my_active" data-ref="chat1">
-                  
-                </div>
-                <div class="col-12 message-screen msgsent-font displayNone" data-ref="chat2">
-                  
-                </div>
-                <div class="col-12 message-screen msgsent-font displayNone"  data-ref="chat3">
-                  
-                </div>
-              </div>
-              <div class="row user-input">
-                <div class="col-2 user-submit">
-                  <i class="fa fa-smile-o" aria-hidden="true"></i>
-                </div>
-                <div class="col-8 contact-name">
-                  <input type="text" class="message message-field" />
-                </div>
-                <div class="col-2 user-submit">
-                  <button class="submit-button">
-                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
+        <div class="col-6">
+            <div class="row d-flex flex-column">
+              <div class="col-3 right-header" id="width100">
+                <div class="row">
+                  <div class="col-2 contact-info">
+                    <img id="active-image-profile" src="img/boy.svg" alt="" class="img-responsive" />
+                  </div>
+                  <div class="col-7 contact-name padding-box" id="active-contact-name">
+                    <span>
+                      <p>Marco</p>
+                    </span>
+                  </div>
+                  <div class="col-1 header-icons">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-1 header-icons">
+                    <i class="fa fa-paperclip" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-1 header-icons">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6" id="width100">
+                <div class="row">
+                    <div class="col-12 message-screen msgsent-font my_active" data-ref="chat1">
+                      
+                    </div>
+                    <div class="col-12 message-screen msgsent-font displayNone" data-ref="chat2">
+                      
+                    </div>
+                    <div class="col-12 message-screen msgsent-font displayNone"  data-ref="chat3">
+                      
+                    </div>
+                    <div class="col-12 message-screen msgsent-font displayNone"  data-ref="chat4">
+                      
+                    </div>
+                    <div class="col-12 message-screen msgsent-font displayNone"  data-ref="chat5">
+                      
+                    </div>
+                    <div class="col-12 message-screen msgsent-font displayNone"  data-ref="chat6">
+                      
+                    </div>
+                  </div>
+              </div>
+            <div class="col-2" id="width100">
+                <div class="row user-input d-flex justify-content-center align-items-center">
+                    <div class="col-1 user-submit d-flex align-items-center">
+                      <i class="fa fa-smile-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-9 contact-name d-flex align-items-center">
+                      <input type="text" class="message message-field" />
+                    </div>
+                    <div class="col-1 user-submit d-flex align-items-center">
+                      <button class="submit-button">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                </div>
+            </div>
 
-        </div>
-
-
+            
+        </div> 
       </div>
     </div>
-  </div>
 
-
-  <!-- Hidden DIV for JS -->
-  <div id="template">
+    <!-- Hidden DIV for JS -->
+    <div id="template">
     <div class='msgsent'>
       <span class="testo"></span>
       <div class="drop-mex">
@@ -259,17 +289,6 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-  <script src="script.js" charset="utf-8"></script>
-
-
-</body>
-
+    <script src="script.js" charset="utf-8"></script>
+  </body>
 </html>

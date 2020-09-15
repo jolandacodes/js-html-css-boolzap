@@ -67,16 +67,16 @@ $(document).ready(function () {
 
   $(".contact").click(function () {
     var clicked = $(this).attr("data-ref");
-    console.log(clicked);
-    $(".message-screen.my_active").removeClass("my_active");
+    $(".message-screen.my_active").removeClass("my_active").addClass('displayNone');
     $(".message-screen[data-ref=" + clicked + "]").removeClass("displayNone").addClass("my_active");
 
-    //creo una variabile che ha il valore del nome in cima alla mia chat
-    var nomeTop = $(".my_list-bg span:first-child").text();
-    var imgTop = $(".my_list-bg img").attr("src");
-    console.log(nomeTop);
+      elem = $(this);
+      
+    var nameTop = elem.find(".contact-name span:first-child").text();
+    var imgTop = elem.find(".contact-info img").attr("src");
+    console.log(nameTop);
     console.log(imgTop);
-    $("#nome_top").text(nomeTop);
-    $("#img_top").attr("src", imgTop);
+    $("#active-contact-name").text(nameTop);
+    $("#active-image-profile").attr("src", imgTop);
   });
 });
